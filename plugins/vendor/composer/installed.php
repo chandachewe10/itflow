@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'efcc0fd5cb5c6d1b8fcb459252a4ef12fb5c095a',
+        'reference' => '612041635d962d37f2f400ba1974bec5456ccd1e',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'efcc0fd5cb5c6d1b8fcb459252a4ef12fb5c095a',
+            'reference' => '612041635d962d37f2f400ba1974bec5456ccd1e',
             'dev_requirement' => false,
         ),
         'carbonphp/carbon-doctrine-types' => array(
