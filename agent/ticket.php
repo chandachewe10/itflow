@@ -427,7 +427,7 @@ if (isset($_GET['ticket_id'])) {
                                         <a class="dropdown-item ajax-modal" href="#" data-modal-url="modals/ticket/ticket_merge.php?ticket_id=<?= $ticket_id ?>">
                                             <i class="fas fa-fw fa-clone mr-2"></i>Merge
                                         </a>
-                                        <?php if (empty($ticket_closed_at)) { ?>
+                                        <?php if (empty($ticket_closed_at) && $client_id) { ?>
                                             <div class="dropdown-divider"></div>
                                             <a class="dropdown-item ajax-modal" href="#"
                                                 data-modal-url="modals/ticket/ticket_contact.php?id=<?= $ticket_id ?>">
@@ -600,9 +600,11 @@ if (isset($_GET['ticket_id'])) {
                                         <label class="btn btn-outline-dark active">
                                             <input type="radio" name="public_reply_type" value="0" checked>Internal Note
                                         </label>
+                                        <?php if ($contact_email) { ?>
                                         <label class="btn btn-outline-info">
                                             <input type="radio" name="public_reply_type" value="2">Public Comment & Email
                                         </label>
+                                        <?php } ?>
                                         <label class="btn btn-outline-info">
                                             <input type="radio" name="public_reply_type" value="1">Public Comment
                                         </label>
