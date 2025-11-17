@@ -14,7 +14,11 @@ This file documents all notable changes made to ITFlow.
 - Fix if Client isn't assigned to a ticket dont show client view.
 - Fix missing session client id check when paying an invoice from client portal.
 - Update Composer Webklex-IMAP library dependency symfony/http-foundation from 7.3.3 to 7.3.7 to fix security related issues.
-- Add back delete Payment provider the database will handle cascade deletes to saved cards, recurring payments and client payment provider reference.  
+- Add back delete Payment provider the database will handle cascade deletes to saved cards, recurring payments and client payment provider reference.
+- Don't show Client Tickets Breadcrumb if no client is assigned to a ticket.
+- Don't Show Contact or Assignment Tab in edit ticket if no Client is Assigned.
+- Don't Show add contact, asset, vendor, watcher if not client is assigned to a ticket.
+- Don't Show Public Comment & Email if contact email doesn't exist.
 
 ### Added / Changed
 - [Feature] Added Asset Tags.
